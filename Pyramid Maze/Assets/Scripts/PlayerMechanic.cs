@@ -31,22 +31,22 @@ public class PlayerMechanic : MonoBehaviour
 
     void FixedUpdate() {
          if (!isMoving){
-            if (Input.GetKey(KeyCode.UpArrow))
+            if (Input.GetKey(KeyCode.UpArrow) | Input.GetKey(KeyCode.W))
             {
                 playerMoviment = Vector3.forward;
                 isMoving = true;
             }
-            else if (Input.GetKey(KeyCode.RightArrow))
+            else if (Input.GetKey(KeyCode.RightArrow) | Input.GetKey(KeyCode.D))
             {
                 playerMoviment = Vector3.right;
                 isMoving = true;
             }
-            else if (Input.GetKey(KeyCode.DownArrow))
+            else if (Input.GetKey(KeyCode.DownArrow) | Input.GetKey(KeyCode.S))
             {
                 playerMoviment = Vector3.back;
                 isMoving = true;
             }
-            else if (Input.GetKey(KeyCode.LeftArrow))
+            else if (Input.GetKey(KeyCode.LeftArrow) | Input.GetKey(KeyCode.A))
             {
                 playerMoviment = Vector3.left;
                 isMoving = true;
