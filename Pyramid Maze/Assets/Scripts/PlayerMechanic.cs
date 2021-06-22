@@ -22,11 +22,6 @@ public class PlayerMechanic : MonoBehaviour
         playerMoviment = new Vector3(0.0f, 0.0f, 0.0f);
 
         isMoving = false;
-
-        // isForwardColliding = false;
-        // isRightColliding = false;
-        // isBackColliding = false;
-        // isLeftColliding = false;
     }
 
     void FixedUpdate() {
@@ -62,26 +57,12 @@ public class PlayerMechanic : MonoBehaviour
 
     void OnCollisionEnter(Collision collision)
     {
-        // float force = 100000;
-        // Vector3 dir = collision.contacts[0].point - transform.position;
-        // dir = -dir.normalized;
-        // Debug.Log(dir);
-        // rb.AddForce(dir*force);
-        
-        // transform.position = Vector3.MoveTowards(transform.position, target.position, step);
-        
-        // movePlayer(-10*playerMoviment);
-        
-        // rb.MovePosition(transform.position + (-10*playerMoviment * speed * Time.deltaTime));
-        
-        // transform.position = Vector3.MoveTowards(transform.position, transform.position - 10*playerMoviment, speed * Time.deltaTime);
-
         transform.position = transform.position - Vector3.Scale(new Vector3((float)0.25, (float)0.25, (float)0.25), playerMoviment);
 
         if (collision.gameObject.name == "Edges" || collision.gameObject.name == "Walls") {
             playerMoviment = Vector3.zero;
             isMoving = false;
-            Debug.Log(collision.gameObject.tag);
+            // Debug.Log(collision.gameObject.tag);
         }
     }
 }
