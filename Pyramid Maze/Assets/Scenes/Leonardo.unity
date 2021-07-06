@@ -10874,7 +10874,7 @@ Light:
     serializedVersion: 2
     m_Bits: 4294967295
   m_RenderingLayerMask: 1
-  m_Lightmapping: 4
+  m_Lightmapping: 2
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1
@@ -17089,7 +17089,7 @@ Light:
     serializedVersion: 2
     m_Bits: 4294967295
   m_RenderingLayerMask: 1
-  m_Lightmapping: 4
+  m_Lightmapping: 2
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1
@@ -21222,6 +21222,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1263827440}
   - component: {fileID: 1263827441}
+  - component: {fileID: 1263827442}
   m_Layer: 0
   m_Name: InputController
   m_TagString: Untagged
@@ -21253,6 +21254,21 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f1595408156c7e84fb8782ed1e60dfc3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cam: {fileID: 1730078449}
+  target: {fileID: 1643750746}
+  distanceToTarget: 45
+--- !u!114 &1263827442
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1263827439}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e12e1c1996dcf04baa2184f639c4d9f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   cam: {fileID: 1730078449}
@@ -34236,7 +34252,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11fd19a6893c3064cbebc12a5f8a8fdf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cenaDestino: 1
+  cenaDestino: 3
 --- !u!1 &2101369503 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 09622701d2035ed45ac327969c31949e, type: 3}

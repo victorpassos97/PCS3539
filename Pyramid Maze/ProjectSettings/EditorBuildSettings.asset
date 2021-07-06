@@ -6,9 +6,21 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 0
-    path: Assets/Scenes/Leonardo.unity
-    guid: e8bfe107c10382e48a48650ee96bfcaf
-  - enabled: 0
     path: Assets/Scenes/SampleScene.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 1
+    path: Assets/Scenes/Renan.unity
+    guid: b976fcb7d35239f4bba66122347cdae6
+  - enabled: 1
+    path: Assets/Scenes/Vitor Santos.unity
+    guid: 933f00e078353e94088032274c5b9ded
+  - enabled: 1
+    path: Assets/Scenes/Leonardo.unity
+    guid: e8bfe107c10382e48a48650ee96bfcaf
+  - enabled: 1
+    path: Assets/Scenes/Miguel.unity
+    guid: 7bdb855ad500f34448a58c48e616c988
+  - enabled: 1
+    path: Assets/Scenes/Victor Passos.unity
+    guid: 5a25cd8bcaa93484aacdce7148905fc3
   m_configObjects: {}
